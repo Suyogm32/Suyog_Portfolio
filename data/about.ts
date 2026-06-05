@@ -8,7 +8,7 @@ export const aboutContent: SectionContent = {
 };
 
 export const aboutStory = [
-  "I'm Ashwini A. Jadhav, a Senior Full Stack Developer with 8+ years of experience building production-grade web applications. I specialize in Laravel and React.js, delivering complete systems from architecture and development through deployment.",
+  "I'm Suyog Mahangade, a Senior Full Stack Developer with 8+ years of experience building production-grade web applications. I specialize in Laravel and React.js, delivering complete systems from architecture and development through deployment.",
   "My work spans e-commerce platforms, Shopify embedded apps, PWAs, CRM systems, and multi-tenant APIs. I thrive in fast-paced environments where independent ownership, clear communication, and reliable delivery matter.",
 ];
 

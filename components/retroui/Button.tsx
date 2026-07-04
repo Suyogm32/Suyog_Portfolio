@@ -51,6 +51,7 @@ export const Button = ({
     <BaseButton
       ref={ref}
       data-cursor-hover
+      nativeButton={!render}
       className={cn(buttonVariants({ variant, size }), className)}
       render={render}
       {...props}

@@ -1,4 +1,5 @@
 import { experience, experienceContent } from "@/data/experience";
+import { ImpactStat } from "@/components/ui/impact-stat";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { SectionWrapper } from "@/components/ui/section-wrapper";
@@ -49,6 +50,18 @@ export function Experience() {
                   </li>
                 ))}
               </ul>
+
+              {job.impact && (
+                <ImpactStat
+                  className="mt-6"
+                  metric={job.impact.metric}
+                  context={job.impact.context}
+                  before={job.impact.before}
+                  after={job.impact.after}
+                  unit={job.impact.unit}
+                  percent={job.impact.percent}
+                />
+              )}
             </Card>
           </ScrollReveal>
         ))}

@@ -20,7 +20,7 @@ export function Hero() {
         className="hero-watermark pointer-events-none absolute top-[12%] right-[-5%] hidden text-[12rem] lg:block"
         aria-hidden
       >
-        8+
+        2+
       </div>
       <div
         className="hero-watermark pointer-events-none absolute bottom-[18%] left-[-8%] hidden text-[6rem] lg:block"
@@ -32,7 +32,7 @@ export function Hero() {
         className="hero-watermark pointer-events-none absolute top-[35%] left-[40%] hidden text-[5rem] lg:block"
         aria-hidden
       >
-        FULL STACK
+        C++
       </div>
 
       <div
@@ -58,7 +58,7 @@ export function Hero() {
           <div className="flex w-full flex-col items-center gap-6 text-center sm:items-start sm:gap-8 sm:text-left">
             <div className="animate-hero-reveal stagger-1 flex w-full flex-wrap items-center justify-center gap-2 sm:justify-start sm:gap-3">
               <Badge variant="orange" className="text-xs sm:text-sm">
-                <span className="sm:hidden">8+ Years Experience</span>
+                <span className="sm:hidden">2+ Years Experience</span>
                 <span className="hidden sm:inline">{heroContent.badge}</span>
               </Badge>
               <Badge variant="outline" className="gap-2 text-xs sm:text-sm">
@@ -111,6 +111,16 @@ export function Hero() {
               >
                 {heroContent.resumeCta.label}
               </ResumeModalTrigger>
+              <Button
+                size="lg"
+                className="w-full sm:w-auto"
+                variant="outline"
+                render={
+                  <a href={siteConfig.resumePath} download />
+                }
+              >
+                Download Resume
+              </Button>
             </div>
 
             <div className="animate-hero-reveal stagger-7 flex w-full max-w-full flex-col gap-2.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
@@ -160,8 +170,8 @@ export function Hero() {
               </Badge>
             </div>
             <ul className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 sm:gap-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
-              {heroTechStack.map((tech) => (
-                <li key={tech.name}>
+              {heroTechStack.map((tech, index) => (
+                <li key={`${tech.name}-${tech.icon}-${index}`}>
                   <TechCard name={tech.name} icon={tech.icon} />
                 </li>
               ))}

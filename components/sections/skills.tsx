@@ -5,11 +5,12 @@ import { Card } from "@/components/retroui/Card";
 
 export function Skills() {
   return (
-    <SectionWrapper id="skills" variant="muted">
+    <SectionWrapper id="skills" cursorZone="skills">
       <SectionHeading
         label={skillsContent.label}
         title={skillsContent.title}
         description={skillsContent.description}
+        badgeVariant="cyan"
       />
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

@@ -4,80 +4,51 @@ export const experienceContent: SectionContent = {
   label: "Experience",
   title: "Professional journey",
   description:
-    "A track record of building and shipping Laravel and React systems — from internships to senior full-stack roles and freelance delivery.",
+    "A track record building backend systems in C++ — from data engineering and software internships to enterprise platform development at Prescient Technologies.",
 };
 
 export const experience: Experience[] = [
   {
-    company: "Aarya Global Consulting",
-    role: "Senior Web Developer",
-    period: "Jan 2023 – Present",
+    company: "Prescient Technologies",
+    role: "Software Engineer",
+    period: "Jul 2024 – Present",
     highlights: [
-      "Develop scalable Laravel applications and REST APIs for production systems",
-      "Build React-based admin dashboards and business management platforms",
-      "Develop Shopify embedded applications and theme extensions",
-      "Design e-commerce and multi-tenant system architecture",
-      "Deliver full systems independently from development to deployment",
-      "Manage production releases and server deployments",
+      "Siemens Teamcenter: Contributed to the design, development, and delivery of backend functionality for an enterprise PLM platform built on a distributed service architecture",
+      "Implemented merge functionality for Usage BOM in Teamcenter to support more reliable product data management",
+      "Implemented WCAG accessibility fixes, resolving ARIA attribute, keyboard navigation, and screen reader compatibility issues",
+      "Performed remote debugging of distributed backend services to identify and resolve production defects, supporting day-to-day system reliability",
+      "Authored unit tests using Google Test (GTest) and participated in code reviews to uphold coding standards and best practices",
+      "Prescient Author Platform: Contributed to a low-code software development platform, implementing soft delete functionality and partial page rendering using ASP.NET UpdatePanel",
+      "Collaborated with cross-functional teams in an Agile environment to deliver production-ready features",
+    ],
+    impact: {
+      metric: "Change Management Module — Bulk License Processing",
+      context:
+        "Re-engineered bulk processing of problem, solution, and impacted items (checkAndConsumeCMLicenseBulk).",
+      before: 14.8,
+      after: 1.67,
+      unit: "s",
+      percent: 88,
+    },
+  },
+  {
+    company: "Persistent Systems",
+    role: "Software Engineering Intern",
+    period: "Jan 2023 – Jun 2023",
+    highlights: [
+      "Completed technical training in Python, Linux, SQL, and data engineering fundamentals",
+      "Developed an e-commerce web application demonstrating backend development and database integration",
+      "Collaborated with development teams to implement scalable, maintainable software solutions",
     ],
   },
   {
-    company: "Freelance Full Stack Developer",
-    role: "Full Stack Developer",
-    period: "July 2022 – Dec 2022",
+    company: "Celebal Technologies",
+    role: "Data Engineering Intern",
+    period: "Jun 2022 – Jul 2022",
     highlights: [
-      "Built Samurai Golf international booking platform from scratch for golf players",
-      "Developed CRM modules for petrol pump management system",
-      "Expanded features for large-scale matrimonial platform",
-      "Delivered Laravel systems with admin workflows and automation",
-    ],
-  },
-  {
-    company: "Techbee Consulting",
-    role: "PHP Developer",
-    period: "May 2019 – May 2022",
-    highlights: [
-      "Developed Laravel-based web applications and REST APIs",
-      "Built dynamic admin dashboards and e-commerce modules",
-      "Integrated payment gateways and third-party services",
-      "Supported production maintenance and feature expansion",
-    ],
-  },
-  {
-    company: "LBM Infotech",
-    role: "CodeIgniter Developer",
-    period: "Nov 2018 – Mar 2019",
-    highlights: [
-      "Developed backend modules using CodeIgniter framework",
-      "Maintained business logic and database operations",
-    ],
-  },
-  {
-    company: "Aspire Web & Informatics",
-    role: "PHP Developer",
-    period: "Feb 2018 – Oct 2018",
-    highlights: [
-      "Built PHP applications using Laravel and CodeIgniter",
-      "Developed backend modules and CRUD systems",
-      "Worked on React.js",
-    ],
-  },
-  {
-    company: "Freelance Developer",
-    role: "Freelance Developer",
-    period: "Aug 2017 – Jan 2018",
-    highlights: [
-      "Developed CRM-style applications for small businesses",
-      "Built school management systems and exam management systems",
-    ],
-  },
-  {
-    company: "Netwin InfoSolutions",
-    role: "Web Development Intern",
-    period: "Jan 2017 – Jul 2017",
-    highlights: [
-      "Assisted in PHP and Flask application development",
-      "Supported backend testing and debugging",
+      "Implemented ETL pipelines for efficient data extraction, transformation, and loading",
+      "Optimized database queries and assisted in maintaining large-scale datasets",
+      "Performed data analysis to generate insights supporting business decision-making",
     ],
   },
 ];

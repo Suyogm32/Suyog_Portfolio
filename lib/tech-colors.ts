@@ -10,22 +10,21 @@ export const accentHex: Record<AccentColor, string> = {
 
 /** Curated per-technology accent — intentional, not random */
 export const techAccentMap: Record<string, AccentColor> = {
-  php: "pink",
-  laravel: "purple",
-  codeigniter: "orange",
+  cpp: "purple",
+  python: "yellow",
+  java: "orange",
   react: "cyan",
   javascript: "yellow",
+  nextjs: "purple",
+  nodejs: "orange",
+  mongodb: "cyan",
   mysql: "orange",
-  html5: "orange",
-  css3: "purple",
-  jquery: "yellow",
   tailwindcss: "cyan",
-  antdesign: "purple",
   mui: "cyan",
-  d3: "cyan",
-  shopify: "orange",
-  bootstrap: "purple",
-  api: "cyan",
+  aws: "orange",
+  linux: "pink",
+  git: "purple",
+  dotnet: "purple",
 };
 
 export function getTechAccent(icon: string): AccentColor {

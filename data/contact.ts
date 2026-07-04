@@ -5,7 +5,7 @@ export const contactContent: SectionContent = {
   label: "Contact",
   title: "Let's connect",
   description:
-    "Open to senior full-stack roles, freelance projects, and collaborations. Reach out anytime.",
+    "Open to software engineering roles, backend/full-stack projects, and collaborations. Reach out anytime.",
 };
 
 export const contactMethods = [

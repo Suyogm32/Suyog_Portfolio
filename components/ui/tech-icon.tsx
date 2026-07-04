@@ -1,41 +1,38 @@
 import type { IconType } from "react-icons";
+import { FaAws, FaJava } from "react-icons/fa";
 import {
-  SiAntdesign,
-  SiBootstrap,
-  SiCodeigniter,
-  SiCss,
-  SiD3,
-  SiHtml5,
+  SiCplusplus,
+  SiDotnet,
+  SiGit,
   SiJavascript,
-  SiJquery,
-  SiLaravel,
+  SiLinux,
+  SiMongodb,
   SiMui,
   SiMysql,
-  SiPhp,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPython,
   SiReact,
-  SiShopify,
   SiTailwindcss,
 } from "react-icons/si";
-import { TbApi } from "react-icons/tb";
 import { cn } from "@/lib/utils";
 
 const iconMap: Record<string, IconType> = {
-  php: SiPhp,
-  laravel: SiLaravel,
-  codeigniter: SiCodeigniter,
+  cpp: SiCplusplus,
+  python: SiPython,
+  java: FaJava,
   react: SiReact,
   javascript: SiJavascript,
+  nextjs: SiNextdotjs,
+  nodejs: SiNodedotjs,
+  mongodb: SiMongodb,
   mysql: SiMysql,
-  html5: SiHtml5,
-  css3: SiCss,
-  jquery: SiJquery,
   tailwindcss: SiTailwindcss,
-  antdesign: SiAntdesign,
   mui: SiMui,
-  d3: SiD3,
-  shopify: SiShopify,
-  bootstrap: SiBootstrap,
-  api: TbApi,
+  aws: FaAws,
+  linux: SiLinux,
+  git: SiGit,
+  dotnet: SiDotnet,
 };
 
 type TechIconProps = {

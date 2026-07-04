@@ -1,5 +1,6 @@
 import { Navbar, Footer } from "@/components/layout";
 import { CustomCursorProvider } from "@/components/providers/custom-cursor-provider";
+import { KonamiEasterEgg } from "@/components/providers/konami-easter-egg";
 import { OnekoProvider } from "@/components/providers/oneko-provider";
 import { SmoothScrollProvider } from "@/components/providers/smooth-scroll-provider";
 import { ThemeProvider } from "@/components/providers/theme-provider";
@@ -30,6 +31,7 @@ export default function RootLayout({
               <main className="relative z-10">{children}</main>
               <Footer />
               <OnekoProvider />
+              <KonamiEasterEgg />
             </SmoothScrollProvider>
           </CustomCursorProvider>
         </ThemeProvider>

@@ -1,111 +1,91 @@
 export const resumeProfile = {
-  location: "Pune, India",
-  phoneDisplay: "+91 7972305010",
+  location: "Pune, India, 411045",
+  phoneDisplay: "+91 98906 11650",
   summary: [
-    "Senior Full Stack Developer with 8+ years of experience building scalable web applications, SaaS platforms, e-commerce systems, and business management solutions. Specialized in Laravel, React.js, REST APIs, and modern frontend development.",
-    "Experienced in delivering complete products from architecture and development to deployment and production support. Strong focus on performance, scalability, clean code, and business-driven solutions.",
+    "Software Engineer with 2+ years of experience in the analysis, design, development, and delivery of software solutions across enterprise PLM platforms and full-stack web applications. Skilled in C++, Python, Java, and JavaScript, with proven strengths in backend development, code review, distributed systems debugging, and performance optimization. Experienced in defining requirements, authoring technical documentation, collaborating in Agile teams, and guiding less experienced engineers to deliver reliable, scalable software.",
   ],
   skillGroups: [
     {
-      title: "Backend",
+      title: "Languages",
+      items: "C++ • Python • Java • JavaScript",
+    },
+    {
+      title: "Backend & Systems",
       items:
-        "Laravel • PHP • CodeIgniter • REST APIs • JWT • Laravel Sanctum",
+        "Distributed Systems • REST APIs • Debugging • Performance Optimization • Data Structures & Algorithms",
     },
     {
-      title: "Frontend",
+      title: "Frameworks & Tools",
       items:
-        "React.js • JavaScript (ES6+) • Tailwind CSS • Ant Design • Material UI • HTML5 • CSS3",
+        "Google Test (GTest) • ASP.NET • Node.js • Next.js • React.js • Git • Agile",
     },
     {
-      title: "Database",
-      items: "MySQL",
+      title: "Databases",
+      items: "MySQL • MongoDB",
     },
     {
-      title: "E-Commerce & Integrations",
-      items: "Shopify Apps • Payment Gateways • OAuth • Third-Party APIs",
-    },
-    {
-      title: "Tools",
-      items: "Git • Deployment Management • System Architecture",
+      title: "Cloud & Platforms",
+      items: "AWS • Linux",
     },
   ],
   experience: [
     {
-      title: "Senior Web Developer — Aarya Global Consulting",
-      period: "Jan 2023 – Present",
+      title: "Software Engineer — Prescient Technologies, Baner, Pune",
+      period: "Jul 2024 – Present",
       highlights: [
-        "Develop scalable Laravel applications and REST APIs",
-        "Build React-based dashboards and business platforms",
-        "Create Shopify embedded applications and extensions",
-        "Design multi-tenant and e-commerce architectures",
-        "Handle deployments and production releases",
+        "Contributed to the design, development, and delivery of backend functionality for Siemens Teamcenter, an enterprise PLM platform built on a distributed service architecture",
+        "Improved the performance of the Change Management module by 88% (14.8s to 1.67s) by re-engineering bulk processing of problem, solution, and impacted items (checkAndConsumeCMLicenseBulk)",
+        "Implemented merge functionality for Usage BOM in Teamcenter to support more reliable product data management",
+        "Implemented WCAG accessibility fixes, resolving ARIA attribute, keyboard navigation, and screen reader compatibility issues",
+        "Performed remote debugging of distributed backend services to identify and resolve production defects, supporting day-to-day system reliability",
+        "Authored unit tests using Google Test (GTest) and participated in code reviews to uphold coding standards and best practices",
+        "Contributed to Prescient Author, a low-code software development platform, implementing soft delete functionality and partial page rendering using ASP.NET UpdatePanel",
+        "Collaborated with cross-functional teams in an Agile environment to deliver production-ready features",
       ],
     },
     {
-      title: "Freelance Full Stack Developer",
-      period: "Jul 2022 – Dec 2022",
+      title: "Software Engineering Intern — Persistent Systems, Hinjewadi, Pune",
+      period: "Jan 2023 – Jun 2023",
       highlights: [
-        "Built Samurai Golf booking platform from scratch",
-        "Developed CRM systems and workflow automation",
-        "Delivered custom Laravel solutions for multiple clients",
+        "Completed technical training in Python, Linux, SQL, and data engineering fundamentals",
+        "Developed an e-commerce web application demonstrating backend development and database integration",
+        "Collaborated with development teams to implement scalable, maintainable software solutions",
       ],
     },
     {
-      title: "PHP Developer — Techbee Consulting",
-      period: "May 2019 – May 2022",
+      title: "Data Engineering Intern — Celebal Technologies, Pune",
+      period: "Jun 2022 – Jul 2022",
       highlights: [
-        "Developed Laravel applications and admin dashboards",
-        "Integrated payment gateways and third-party services",
-        "Maintained and expanded production systems",
-      ],
-    },
-    {
-      title: "Early Career",
-      period: "2017 – 2019",
-      highlights: [
-        "Worked with CodeIgniter, Laravel, React.js, and PHP applications across LBM Infotech, Aspire Web & Informatics, and freelance projects.",
+        "Implemented ETL pipelines for efficient data extraction, transformation, and loading",
+        "Optimized database queries and assisted in maintaining large-scale datasets",
+        "Performed data analysis to generate insights supporting business decision-making",
       ],
     },
   ],
   featuredProjects: [
     {
-      title: "Naam Jap Shibir",
+      title: "FitVoyage – Fitness Application",
       description:
-        "Real-time event tracking PWA built with React, Laravel, and MySQL featuring attendance tracking, geolocation validation, and admin dashboards.",
+        "Full-stack fitness application with workout scheduling, exercise guidance, diet articles, and integrated shopping. Integrated with Google Fit to track user activity and health metrics. Built with Next.js, React.js, MongoDB, Tailwind CSS, and Material UI.",
     },
     {
-      title: "EC Mall",
+      title: "E-Commerce Web Application",
       description:
-        "Multi-vendor e-commerce platform with seller management, shipping automation, and order lifecycle tracking.",
-    },
-    {
-      title: "Shopify Smart Product Filter",
-      description:
-        "Embedded Shopify application enabling merchants to create dynamic storefront filters without theme code modifications.",
-    },
-    {
-      title: "Samurai Golf Tours",
-      description:
-        "International golf booking platform with Mapbox integration, booking workflows, and automated communications.",
+        "Full-stack e-commerce platform with product browsing, shopping cart functionality, and secure payments via Stripe, plus AWS S3 for product media storage. Built with Next.js, React.js, MongoDB, and Tailwind CSS.",
     },
   ],
   education: [
     {
-      degree: "Master of Computer Science",
-      institution: "Savitribai Phule Pune University",
-    },
-    {
-      degree: "Bachelor of Computer Science",
-      institution: "Savitribai Phule Pune University",
+      degree: "B.Tech in Computer Science — GPA 8.59/10",
+      institution: "MIT Academy of Engineering, Pune (2019 – 2023)",
     },
   ],
   highlights: [
-    "8+ Years of Experience",
-    "Laravel & React Specialist",
-    "Shopify App Development",
-    "SaaS & Multi-Tenant Systems",
-    "REST API Architecture",
-    "E-Commerce Solutions",
-    "End-to-End Product Development",
+    "2+ Years Professional Experience",
+    "C++ & Distributed Systems",
+    "88% Perf. Improvement Shipped",
+    "Siemens Teamcenter Contributor",
+    "WCAG Accessibility",
+    "Full-Stack: Next.js & React",
   ],
 } as const;

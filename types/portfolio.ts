@@ -19,11 +19,21 @@ export type Project = {
   tags: string[];
 };
 
+export type ImpactStat = {
+  metric: string;
+  context?: string;
+  before: number;
+  after: number;
+  unit: string;
+  percent: number;
+};
+
 export type Experience = {
   company: string;
   role: string;
   period: string;
   highlights: string[];
+  impact?: ImpactStat;
 };
 
 export type Education = {

@@ -1,6 +1,7 @@
 import {
   Hero,
   Experience,
+  Skills,
   Projects,
   About,
   Contact,
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <Hero />
       <Experience />
+      <Skills />
       <Projects />
       <About />
       <Contact />

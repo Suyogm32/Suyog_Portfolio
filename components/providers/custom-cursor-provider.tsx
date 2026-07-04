@@ -8,6 +8,7 @@ const ZONE_COLORS: Record<string, string> = {
   tech: "#06b6d4",
   projects: "#8b5cf6",
   experience: "#f97316",
+  skills: "#06b6d4",
   contact: "#facc15",
   about: "#8b5cf6",
   default: "#ec4899",

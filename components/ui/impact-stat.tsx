@@ -62,7 +62,7 @@ export function ImpactStat({
       return;
     }
 
-    const duration = 1700;
+    const duration = 2200;
     const start = performance.now();
     let rafId = 0;
 
@@ -110,11 +110,30 @@ export function ImpactStat({
         </div>
       </div>
 
-      <div className="mt-4 h-3 w-full overflow-hidden border-2 border-black bg-secondary">
+      <div className="relative mt-9 mb-5">
+        <div className="h-3 w-full overflow-hidden border-2 border-black bg-secondary">
+          <div
+            className="h-full bg-orange"
+            style={{ width: `${Math.min(percentValue, 100)}%` }}
+          />
+        </div>
+
         <div
-          className="h-full bg-orange"
-          style={{ width: `${Math.min(percentValue, 100)}%` }}
-        />
+          className="car-bounce absolute z-10"
+          style={{
+            left: `${Math.min(percentValue, 100)}%`,
+            top: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/f1.png"
+            alt=""
+            aria-hidden="true"
+            className="h-16 w-16 drop-shadow-sm"
+          />
+        </div>
       </div>
 
       <div className="mt-5 flex items-center gap-4 sm:gap-8">

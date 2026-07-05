@@ -72,73 +72,79 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4" noValidate>
-      {/* Honeypot — hidden from real visitors, bots tend to fill it in */}
-      <div className="hidden" aria-hidden="true">
-        <label htmlFor="company">Company</label>
-        <input
-          id="company"
-          name="company"
-          type="text"
-          tabIndex={-1}
-          autoComplete="off"
-        />
+    <form
+      onSubmit={handleSubmit}
+      className="flex h-full flex-col justify-between gap-6"
+      noValidate
+    >
+      <div className="space-y-4">
+        {/* Honeypot — hidden from real visitors, bots tend to fill it in */}
+        <div className="hidden" aria-hidden="true">
+          <label htmlFor="company">Company</label>
+          <input
+            id="company"
+            name="company"
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+          />
+        </div>
+
+        <div>
+          <label
+            htmlFor="name"
+            className="mb-1.5 block font-mono text-[11px] tracking-[0.1em] text-muted-foreground uppercase"
+          >
+            Name
+          </label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            autoComplete="name"
+            placeholder="Your name"
+            className={fieldClassName}
+            disabled={status === "submitting"}
+          />
+        </div>
+
+        <div>
+          <label
+            htmlFor="email"
+            className="mb-1.5 block font-mono text-[11px] tracking-[0.1em] text-muted-foreground uppercase"
+          >
+            Email
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autoComplete="email"
+            placeholder="you@example.com"
+            className={fieldClassName}
+            disabled={status === "submitting"}
+          />
+        </div>
+
+        <div>
+          <label
+            htmlFor="message"
+            className="mb-1.5 block font-mono text-[11px] tracking-[0.1em] text-muted-foreground uppercase"
+          >
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows={5}
+            placeholder="What's on your mind?"
+            className={cn(fieldClassName, "resize-none")}
+            disabled={status === "submitting"}
+          />
+        </div>
       </div>
 
-      <div>
-        <label
-          htmlFor="name"
-          className="mb-1.5 block font-mono text-[11px] tracking-[0.1em] text-muted-foreground uppercase"
-        >
-          Name
-        </label>
-        <input
-          id="name"
-          name="name"
-          type="text"
-          autoComplete="name"
-          placeholder="Your name"
-          className={fieldClassName}
-          disabled={status === "submitting"}
-        />
-      </div>
-
-      <div>
-        <label
-          htmlFor="email"
-          className="mb-1.5 block font-mono text-[11px] tracking-[0.1em] text-muted-foreground uppercase"
-        >
-          Email
-        </label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          autoComplete="email"
-          placeholder="you@example.com"
-          className={fieldClassName}
-          disabled={status === "submitting"}
-        />
-      </div>
-
-      <div>
-        <label
-          htmlFor="message"
-          className="mb-1.5 block font-mono text-[11px] tracking-[0.1em] text-muted-foreground uppercase"
-        >
-          Message
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          rows={5}
-          placeholder="What's on your mind?"
-          className={cn(fieldClassName, "resize-none")}
-          disabled={status === "submitting"}
-        />
-      </div>
-
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-3 border-t-2 border-black pt-6 sm:flex-row sm:items-center sm:justify-between sm:pt-8">
         <Button
           type="submit"
           size="lg"

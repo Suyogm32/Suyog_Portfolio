@@ -16,9 +16,9 @@ export function Contact() {
         badgeVariant="yellow"
       />
 
-      <div className="mx-auto grid w-full max-w-5xl gap-5 md:grid-cols-2 md:gap-8">
+      <div className="mx-auto grid w-full max-w-5xl gap-5 md:grid-cols-2 md:gap-8 md:items-stretch">
         <Card
-          className="w-full p-5 sm:p-8 lg:p-10"
+          className="flex h-full w-full flex-col p-5 sm:p-8 lg:p-10"
           data-cursor-hover
           data-cursor-type="contact"
         >
@@ -30,13 +30,13 @@ export function Contact() {
             — I&apos;d love to hear about your project or opportunity.
           </p>
 
-          <div className="mt-8">
+          <div className="mt-8 flex flex-1 flex-col">
             <ContactActions methods={contactMethods} />
           </div>
         </Card>
 
         <Card
-          className="w-full p-5 sm:p-8 lg:p-10"
+          className="flex h-full w-full flex-col p-5 sm:p-8 lg:p-10"
           data-cursor-hover
           data-cursor-type="card"
         >
@@ -48,7 +48,7 @@ export function Contact() {
             usually reply within a day or two.
           </p>
 
-          <div className="mt-8">
+          <div className="mt-8 flex flex-1 flex-col">
             <ContactForm />
           </div>
         </Card>

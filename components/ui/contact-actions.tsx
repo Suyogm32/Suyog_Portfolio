@@ -25,8 +25,8 @@ type ContactActionsProps = {
 
 export function ContactActions({ methods }: ContactActionsProps) {
   return (
-    <div className="space-y-6 sm:space-y-8">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
+    <div className="flex h-full flex-col justify-between gap-8">
+      <div className="space-y-3">
         {methods.map((method) => {
           const Icon = iconMap[method.label as keyof typeof iconMap];
 
@@ -36,21 +36,23 @@ export function ContactActions({ methods }: ContactActionsProps) {
               data-cursor-hover
               data-cursor-type="contact"
               data-cursor-magnetic
-              className="group flex flex-col items-center border-2 border-black bg-background p-5 text-center shadow-sm transition-all duration-300 active:scale-[0.98] sm:p-6 sm:hover:-translate-y-1.5 sm:hover:border-yellow sm:hover:shadow-lg"
+              className="group flex flex-col gap-3 border-2 border-black bg-background p-4 shadow-sm transition-all duration-300 active:scale-[0.98] sm:flex-row sm:items-center sm:gap-4 sm:p-5 sm:hover:-translate-y-1 sm:hover:border-yellow sm:hover:shadow-lg"
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center border-2 border-black bg-yellow text-foreground shadow-xs transition-transform duration-300 sm:group-hover:scale-110">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center border-2 border-black bg-yellow text-foreground shadow-xs transition-transform duration-300 sm:group-hover:scale-110">
                 {Icon ? <Icon className="h-5 w-5" aria-hidden /> : null}
               </div>
-              <p className="font-head text-sm font-semibold text-card-foreground">
-                {method.label}
-              </p>
-              <p className="mt-1.5 max-w-full break-all text-sm leading-5 text-muted-foreground">
-                {method.description}
-              </p>
+              <div className="min-w-0 flex-1">
+                <p className="font-head text-sm font-semibold text-card-foreground">
+                  {method.label}
+                </p>
+                <p className="mt-0.5 max-w-full truncate text-sm text-muted-foreground">
+                  {method.description}
+                </p>
+              </div>
               <Button
-                size="md"
+                size="sm"
                 variant="outline"
-                className="mt-5 w-full min-h-11"
+                className="w-full shrink-0 sm:w-auto"
                 render={
                   <a
                     href={method.href}
